@@ -1,0 +1,84 @@
+package com.baidu.ueditor.spring;
+
+import org.springframework.boot.context.properties.ConfigurationProperties;
+
+/**
+ * 百度编辑器配置
+ *
+ * @author lihy
+ * @version 2018/6/12
+ */
+@ConfigurationProperties("ue")
+public class EditorProperties {
+
+    /**
+     * config.json 路径
+     */
+    private String configFile;
+
+    /**
+     * ueditor服务器统一请求接口路径
+     */
+    private String serverUrl;
+
+    /**
+     * 资源访问前缀
+     * 自定义上传时字段无意义 映射地址
+     */
+    private String urlPrefix;
+    
+    /**
+     * 资源访问前缀
+     * 自定义上传时字段无意义 映射地址 别名
+     */
+    private String urlPrefixAs;
+
+    /**
+     * 存储文件的绝对路径 必须使用标准路径"/"作为分隔符
+     * 默认为"/"即当前项目所在磁盘根目录
+     * 自定义上传时字段无意义
+     */
+    private String physicalPath = "/";
+
+    public String getConfigFile() {
+        return configFile;
+    }
+
+    public void setConfigFile(String configFile) {
+        this.configFile = configFile;
+    }
+
+    public String getServerUrl() {
+        return serverUrl;
+    }
+
+    public void setServerUrl(String serverUrl) {
+        this.serverUrl = serverUrl;
+    }
+
+    public String getUrlPrefix() {
+        return urlPrefix;
+    }
+
+    public void setUrlPrefix(String urlPrefix) {
+        this.urlPrefix = urlPrefix;
+    }
+
+    public String getPhysicalPath() {
+        return physicalPath;
+    }
+
+    public void setPhysicalPath(String physicalPath) {
+        this.physicalPath = physicalPath;
+    }
+
+	public String getUrlPrefixAs() {
+		return urlPrefixAs;
+	}
+
+	public void setUrlPrefixAs(String urlPrefixAs) {
+		this.urlPrefixAs = urlPrefixAs;
+	}
+    
+
+}
