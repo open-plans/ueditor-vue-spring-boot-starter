@@ -23,8 +23,12 @@ https://github.com/HaoChuan9421/vue-ueditor-wrap
 # 2、依赖新的maven-jar包（已上传阿里云镜像）
 
 
-
-
+    <!-- springboot-ueditor 富文本编辑器 -->
+    <dependency>
+        <groupId>org.kd</groupId>
+        <artifactId>ueditor-vue-spring-boot-starter</artifactId>
+        <version>1.0-M1</version>
+    </dependency>
 
 
 

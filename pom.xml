@@ -104,7 +104,7 @@
 		<repository>
 			<id>bintray-kd-maven</id>
 			<name>kd-maven</name>
-			<url>https://api.bintray.com/maven/kd/maven/showSql-spring-boot-starter/;publish=1</url>
+			<url>https://api.bintray.com/maven/kd/maven/ueditor-vue-spring-boot-starter/;publish=1</url>
 		</repository>
 	</distributionManagement>
 
